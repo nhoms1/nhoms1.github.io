@@ -3,43 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Hue travel</title>
+    <style>
+        /* CSS styles điều chỉnh giao diện của trang */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Đặt vị trí tương đối để có thể điều chỉnh menu */
+        }
+        header {
+            background-color: rgba(5, 30, 39, 0.991); /* Màu xám với độ trong suốt 70% */
+            color: rgba(255, 255, 255, 0.8); /* Màu chữ trắng với độ trong suốt 80% */
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 20px; /* Kích thước của tiêu đề */
+            margin: 5px 0; /* Khoảng cách trên và dưới tiêu đề */
+        }
+        nav {
+            background-color: rgba(0, 129, 203, 0.45); /* Màu xanh dương tương tự như màu của nước biển với độ trong suốt 70% */
+            padding: 10px;
+            position: absolute; /* Đặt vị trí tuyệt đối để di chuyển menu vào góc */
+            top: 6cm; /* Đặt vị trí cách top 8cm */
+            right: 10px;
+            transform: translateY(-50%);
+        }
+        .menu-item {
+            margin-bottom: 20px; /* Khoảng cách giữa các mục trong menu */
+        }
+        .menu-item a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px; /* Thêm padding để tạo khoảng trống xung quanh văn bản */
+        }
+        .menu-item a:hover {
+            color: brown;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.7); /* Màu xám với độ trong suốt 70% */
+            color: rgba(255, 255, 255, 0.8); /* Màu chữ trắng với độ trong suốt 80% */
+            text-align: center;
+            padding: 5px; /* Padding nhỏ hơn */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px; /* Kích thước chữ nhỏ hơn */
+        }
+        footer a {
+            color: rgba(255, 255, 255, 0.8); /* Màu chữ trắng với độ trong suốt 80% */
+        }
+        /* CSS styles cho video background */
+        #video-background {
+            position: absolute;
+            top: calc(50% + 6cm); /* Di chuyển video xuống 10cm so với giữa trang */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            background-size: cover;
+        }
+    </style>
+    
 </head>
 <body>
+    <video autoplay muted loop id="video-background">
+        <source src="[TRAVEL FILM] THE FACE OF HUẾ - HERE AND NOW (1).mp4" type="video/mp4">
+    </video>
     <header>
-        <div class="header-top">
-            <i class="fa-solid fa-bars" style="color: #B197FC;"></i>
-            <ul>
-                <li style="--x:1;"><a href="">Giới thiệu</a></li>
-                <li style="--x:2;"><a href="">Điểm đến</a></li>
-                <li style="--x:3;"><a href="">Hoạt động</a></li>
-                <li style="--x:4;"><a href="">Khách sạn</a></li>
-                <li style="--x:5;"><a href="">Nhà hàng</a></li>
-                <li style="--x:6;"><a href="">Thông tin liên hệ</a></li>
-            </ul>
-        </div>
-<div class="video-container">
-            <iframe src="https://toquoc.mediacdn.vn/thumb_w/640/280518851207290880/2023/12/4/hue-imperial-gate-1024x683-754-17016811818591749547652.png"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        </div>
-        <div class="header-content">
-            <h1>Khám phá</h1>
-            <form action="">
-                <h1>Đăng kí ngay để nhận thông tin tư vấn</h1>
-                <p>Số người</p>
-                <input type="number" min="1" placeholder="Bạn đi bao nhiêu người ?">
-                <p>Ngày đi</p>
-                <input type="date">
-                <p>Ngày về</p>
-                <input type="date">
-                <button>Đăng kí</button>
- 
-            </form>
-
-        </div>
+        <h1>Hue travel</h1>
     </header>
-    
+    <nav>
+        <div class="menu-item"><a href="#">Giới thiệu</a></div>
+        <div class="menu-item"><a href="#">Điểm đến</a></div>
+        <div class="menu-item"><a href="#">Hoạt động</a></div>
+        <div class="menu-item"><a href="#">Khách sạn</a></div>
+        <div class="menu-item"><a href="#">Nhà hàng</a></div>
+        <div class="menu-item"><a href="#">Thông tin liên hệ</a></div>
+    </nav>
+    <div class="header-content">
+        <h2>Khám phá</h2>
+        <form action="">
+            <h1>Đăng kí ngay để nhận thông tin tư vấn</h1>
+            <p>Số người</p>
+            <input type="number" min="1" placeholder="Bạn đi bao nhiêu người ?">
+            <p>Ngày đi</p>
+            <input type="date">
+            <p>Ngày về</p>
+            <input type="date">
+            <button>Tìm kiếm</button>
+        </form>
+    </div>
+    <section>
+        <h2></h2>
+        <p></p>
+        <p></p>
+    </section>
+    <footer>
+        <p>Bản quyền &copy; 2024 Du lịch Huế. Đã được phát triển bởi <a href="https://www.instagram.com/tltv12.8/">Trần Lê Tường Vy</a>.</p>
+    </footer>
 </body>
 </html>
 
