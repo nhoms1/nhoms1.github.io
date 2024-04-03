@@ -1,0 +1,181 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="web_khachsan.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <script src="script/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo" style="align-content:center">
+                        <a href="index.aspx">
+                            <img src="images/logo.png" width="300px"  />
+                        </a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems" style="a:hover:yellow">
+                            <li><a href="index.aspx">Trang Chủ</a></li>
+                            <li><a href="products.aspx">Khách Sạn</a></li>
+                            <li><a href="contact.aspx">Liên Hệ</a></li>
+                            <li id="loregisterlogin" runat="server"><a href="account.aspx">Tài Khoản</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <span class="ti-menu" onclick="menutoggle()"></span>
+                    <span class="ti-search" onclick="search()"></span>
+                    
+                </div>
+
+                <form action="products.aspx">
+                    <div class="search-box">
+                        <input name="search" id="search" type="text" placeholder="Bạn muốn tìm gì...">
+                        <button class="search-btn" >Tìm kiếm</button>
+                    </div>  
+                </form>
+                       
+            </div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        
+        <!-- Liên hệ -->
+    <!--
+        <div class="brands">
+            <div class="row" style="margin-top: -50px; margin-bottom: -50px; padding: -50px; align-items: normal">
+                <div class="brands-col-1">
+                    <h4>
+                        <b>Hà Nội</b>
+                        <br /><br />
+                    </h4>
+                    <p style="color: black">
+                        1. 10 Hàm Long, Q.Hoàn Kiếm, TP.Hà Nội <br />
+                        Tel: 024 3933 2727 <br /><br />
+                        2. 101 Núi Trúc, Kim Mã, Q.Ba Đình <br />
+                        Tel: 0243 244 4824
+                    </p>
+                </div>
+                <div class="brands-col-2">
+                    <h4>
+                        <b>Hồ Chí Minh</b>
+                        <br /><br />
+                    </h4>
+                    <p style="color: black">
+                        1. 222 Lý Chính Thắng, Quận 3 (Ngã tư Lý Chính Thắng giao Nguyễn Thông) <br />
+                        Tel: 028 3526 0717 <br />
+                        2. 174 Cộng Hòa, Q.Tân Bình <br />
+                        Tel: 028 3811 2799
+                    </p>
+                </div>
+                <div class="brands-col-3">
+                    <h4>
+                        <b>Đà Nẵng</b>
+                        <br /><br />
+                    </h4>
+                    <p style="color: black">
+                        1. 255 Trưng Nữ Vương, Q.Hải Châu <br />
+                        Tel: 024 3933 2727 <br /><br /><br /><br />
+                    </p>
+                </div>
+                <div class="brands-col-4">
+                    <h4><b>Liên Hệ</b></h4><br />
+                    <div class="social-icons">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                    <div class="icon-container">
+                        Đường dây nóng: 1900 6868
+                    </div>
+                </div>
+            </div>
+        </div>
+            -->
+                                                                                            <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-3">
+                        <img src="./images/logo.png" alt="" style="width:200px", height="120px">
+                    </div>
+
+                    <div class="col-3" style="text-align:left">
+                        <h3>PHÒNG KHÁCH SẠN</h3>
+                        <ul>
+                            <li>Superior Garden View</li>
+                            <li>Balcony Deluxe Garden View</li>
+                            <li>Family Deluxe Garden View</li>
+                            <li>3 Bed-room Aparment</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3" style="text-align:left">
+                        <h3>PHỤC VỤ</h3>
+                        <ul>
+                            <li>Nhà hàng</li>
+                            <li>Spa</li>
+                            <li>Phòng GYM - FITNESS CENTER</li>
+                            <li>Hội nghị</li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+                <hr>
+                <p class="copyright">HOTEL - Kinh nghiệm và trải nghiệm</p>
+            </div>
+        </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        function search() {
+            var searchBox = document.querySelector('.search-box');
+            if (searchBox.style.display == "none") {
+                searchBox.style.display = "block";
+            } else {
+                searchBox.style.display = "none";
+            }
+
+        }
+
+    </script>
+</body>
+</html>
