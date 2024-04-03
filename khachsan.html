@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head runat="server">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trang chủ</title>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/responsive.css"/>
+        <link rel="stylesheet" href="themify-icons/themify-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+        <script src="script/script.js"></script>
+        <script
+          src="https://kit.fontawesome.com/64d58efce2.js"
+          crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo" style="align-content:center">
+                    <a href="index.aspx">
+                        <img src="images/logo.png" width="300px"  />
+                    </a>
+                </div>
+                
+                <span class="ti-menu" onclick="menutoggle()"></span>
+                <span class="ti-search" onclick="search()"></span>
+                
+            </div>
+
+            <form action="products.aspx">
+                <div class="search-box">
+                    <input name="search" id="search" type="text" placeholder="Bạn muốn tìm gì...">
+                    <button class="search-btn" >Tìm kiếm</button>
+                </div>  
+            </form>
+                   
+        </div>
+
+
+    </div>
+
+    <div class="row" style="margin-top:-30px">
+        <div class="col-2">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/banner1.jpg" />
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/banner2.jpg" />
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/banner3.jpg" />
+                </div>
+  
+                  <div class="mySlides fade">
+                      <img src="images/banner4.jpg" />
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:-40px" >
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+
+                                                                    <!-- PHÒNG KHÁCH SẠN-->
+    <div class="small-container" style="margin-top:10px">
+        <h2 class="title">KHÁCH SẠN</h2>
+        <div class="row" style="margin-top:-60px">
+            <div class="col-4">
+                <a href="product-detail.aspx">
+                    <img src="images/phong1.jpg"/>
+                </a>
+                <h4>khach san</h4>
+                <p>500000đ</p>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.aspx">
+                    <img src="web_khachsan/images/phong4.jpg"/>
+                </a>
+                <h4>khach san</h4>
+                <p>700000đ</p>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.aspx">
+                    <img src="web_khachsan/images/phong5.jpg"/>
+                </a>
+                <h4>khach san</h4>
+                <p>500000đ</p>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.aspx">
+                    <img src="images/phong1.jpg"/>
+                </a>
+                <h4>khach san</h4>
+                <p>500000đ</p>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.aspx">
+                    <img src="images/phong1.jpg"/>
+                </a>
+                <h4>khach san</h4>
+                <p>500000đ</p>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.aspx">
+                    <img src="images/phong1.jpg"/>
+                </a>
+                <h4>khach san</h4>
+                <p>500000đ</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+          <!--Title-->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Sản phẩm tương tự</h2>
+            </div>
+        </div>
+<!--Product-->
+
+        <div class="small-container">
+        
+            <div class="row">
+                <div class="col-4" >
+                    <a href="#">
+                        <img src="./images/phong5.jpg"/>
+                        <h4>Superior Garden View 5</h4>
+                        <p>380000 đ</p>
+                    </a>
+                </div>
+    
+                <div class="col-4">
+                    <a href="#">
+                        <img src="./images/phong11.jpg"/>
+                        <h4>Balcony Deluxe Garden 5</h4>
+                        <p>450000 đ</p>
+                    </a>
+                </div>
+    
+                <div class="col-4">
+                    <a href="#">
+                        <img src="./images/phong18.jpg"/>
+                        <h4>Family Deluxe Garden View 6</h4>
+                        <p>500000 đ</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <!--Tiện ích-->
+    <h2 class="title" style="margin-top:30px">TIỆN ÍCH TẠI HUẾ</h2>
+    <div class="small-container">
+        <div class="row" style="margin-top:-60px">
+            <div class="col-3">
+                <img src="images/tienich1.jpg" />
+                <p style="color:black">Tour nghe ca Huế trên sông Hương</p>
+            </div>
+            <div class="col-3">
+                <img src="images/tienich2.jpg" />
+                <p style="color:black">Nhà hàng chay với hơn 50 món.</p>
+            </div>
+            <div class="col-3">
+                <img src="images/tienich3.jpg" />
+                <p style="color:black">Nhà hàng với các món Á – Âu.</p>
+            </div>
+            <div class="col-3">
+                <img src="images/tienich4.jpg" />
+                <p style="color:black">Dịch cụ xe đưa đón sân bay.</p>
+            </div>
+            <div class="col-3">
+                <img src="images/tienich5.jpg" />
+                <p style="color:black">Dịch vụ thuê xe dạo quanh thành phố.</p>
+            </div>
+            <div class="col-3">
+                <img src="images/tienich6.jpg" />
+                <p style="color:black">Vị trí thuận lợi gần các điểm du lịch</p>
+            </div>
+        </div>
+
+        <p style="text-align:center; font-size:20px">Liên hệ Tiếp Tân để được hướng dẫn cụ thể!</p>
+    </div>
+
+
+
+    <!-- banner6 -->
+   <div class="row" style="background-image:url(images/banner6.jpg); height:300px">
+       <div class="col-4" style="transform:none; text-align:center">
+       <p style="color:white; margin-top:16px; font-size:60px">32
+           <span style="font-size:14px">PHÒNG</span>
+       </p>
+       </div>
+       <div class="col-4" style="transform:none; text-align:center; ">
+       <p style="color:white; margin-top:15px; font-size:60px">20
+           <span style="font-size:16px">DỊCH VỤ TIỆN ÍCH</span>
+       </p>
+       </div>
+       <div class="col-4" style="transform:none; text-align:center">
+           <p style="color:white; margin-top:15px;font-size:60px"> 25
+               <span style="font-size:16px">NHÂN VIÊN QUẢN LÝ</span>
+           </p>
+       </div>
+       <div class="col-4" style="transform:none; text-align:center">
+           <p style="color:white; margin-top:15px; font-size:60px">1
+               <span style="font-size:16px">NĂM KINH NGHIỆM</span>
+           </p>
+       </div>
+    </div>
+
+
+ 
+<div class="tieu_de">
+    <h1 style="text-align:center; color:red;"><i><strong>LIÊN HỆ</strong></i></h1><br />
+</div>
+<div class="container">
+    <div class="row" style="margin-top:-20px">
+        <div class="col-2" style="background-color:antiquewhite; padding:20px">
+            <div class="title" style="margin-bottom:20px">
+                <h2>Hue Hotel</h2>
+            
+            </div>
+            <p style="color:black;">Địa chỉ: 1/142 Nguyễn Sinh Cung, Vỹ Dạ, Thành phố Huế, Thừa Thiên – Huế.</p>
+            <p style="color:black;">SĐT: 0904.94.11.42</p>
+            <p style="color:black;">Email: khachsanhue.net@gmail.com</p>
+
+        </div> 
+        <div class="col-2" style="background-color:antiquewhite; padding:20px">
+            <div class="title" style="margin-bottom:20px">
+                <h2>Timothy Homestay Huế</h2>
+            
+            </div>
+            <p style="color:black;">Địa chỉ: 34, ngõ 485, Chi Lăng, Huế, Huế, Việt Nam.</p>
+            <p style="color:black;">SĐT: 0983 503 893 - 093 520 21 71</p>
+            <p style="color:black;">Email: timothy.studio.coffee@gmail.com</p>
+        </div>
+        <div class="col-2" style="background-color:antiquewhite; padding:20px">
+            <div class="title" style="margin-bottom:20px">
+                <h2>Trường Tiền Hotel</h2>
+            
+            </div>
+            <p style="color:black;">59 Bến Nghé, Phú Hội, Thừa Thiên - Huế, Việt Nam</p>
+            <p style="color:black;">SĐT: +84 919 862 772</p>
+            <p style="color:black;">Email: hotel.truongtien@gmail.com</p>
+        </div>
+        <div class="col-2" style="background-color:antiquewhite;  padding:20px">
+            <div class="title" style="margin-bottom:20px">
+                <h2>Melia Vinpearl Hotel Huế</h2>
+            
+            </div>
+            <p style="color:black;"> 50A, đường Hùng Vương, TP.Huế, tỉnh Thừa Thiên Huế.</p>
+            <p style="color:black;">SĐT: 0997154333</p>
+            <p style="color:black;">Email:</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3">
+                <img src="./images/logo.png" alt="" style="width:200px", height="120px">
+            </div>
+
+            <div class="col-3" style="text-align:left">
+                <h3>PHÒNG KHÁCH SẠN</h3>
+                <ul>
+                    <li>Superior Garden View</li>
+                    <li>Balcony Deluxe Garden View</li>
+                    <li>Family Deluxe Garden View</li>
+                    <li>3 Bed-room Aparment</li>
+                </ul>
+            </div>
+
+            <div class="col-3" style="text-align:left">
+                <h3>PHỤC VỤ</h3>
+                <ul>
+                    <li>Nhà hàng</li>
+                    <li>Spa</li>
+                    <li>Phòng GYM - FITNESS CENTER</li>
+                    <li>Hội nghị</li>
+                </ul>
+            </div>
+
+            
+        </div>
+        <hr>
+        <p class="copyright">HOTEL - Kinh nghiệm và trải nghiệm</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    function search() {
+        var searchBox = document.querySelector('.search-box');
+        if (searchBox.style.display == "none") {
+            searchBox.style.display = "block";
+        } else {
+            searchBox.style.display = "none";
+        }
+
+    }
+
+    var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Chuyển ảnh sau 4 giây
+        }
+
+</script>
