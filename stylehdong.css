@@ -29,7 +29,7 @@
 .nice-place-text {
     position: absolute;
     width: 100%;
-    height: 180px;
+    height: 120px;
     bottom: 0;
     padding: 12px;
     background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(255,255,255,0));
@@ -46,6 +46,8 @@
     margin-bottom: 50px;
     color: cadetblue;
     position: relative;
+    transition: transform 0.5s ease; /* Thêm transition cho hiệu ứng mượt mà */
+    transform: translateY(-30px); /* Dịch chuyển tiêu đề lên cao 5px mặc định */
 }
 .nice-place h1::before {
     position: absolute;
@@ -62,6 +64,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid cadetblue;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+    transform: translateY(-5px) scale(0.95);
+}
+
+.back-link a {
+    color: cadetblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
 }
 
 
