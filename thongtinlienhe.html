@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Liên Hệ</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; 
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #202d3b;
+            margin: 0; 
+            padding: 20px; 
+            box-sizing: border-box; 
+        }
+        .contact-info {
+            margin-bottom: 20px;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            color: #2c3e50; 
+            text-align: center; 
+            flex-wrap: wrap; 
+            background-color: rgba(255, 255, 255, 0.8); /* Màu nền của phần thông tin liên hệ */
+            padding: 15px; 
+            border-radius: 10px; 
+        }
+        .contact-left {
+            flex: 1;
+            text-align: left; 
+        }
+        .city {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 18px; 
+        }
+        .address {
+            margin-bottom: 5px;
+            font-size: 16px; 
+        }
+        .contact-info:not(:last-child) {
+            border-bottom: 8px solid #ff0077; 
+        }
+        .contact-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .contact-item {
+            margin-bottom: 10px;
+            font-weight: bold; /* In đậm số điện thoại */
+            /* Không cần gạch chân dưới số điện thoại */
+            word-break: break-all; /* Ngắt từ khi chữ quá dài */
+            margin-top: 10px; /* Thêm margin giữa các mục */
+        }
+        .contact-item span {
+            text-decoration: underline; /* Gạch chân dưới số điện thoại */
+        }
+        .city, .contact-title {
+            font-size: 20px; /* Đặt cỡ chữ 20px cho cả "Hà Nội" và "Liên hệ với chúng tôi" */
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-info">
+        <div class="contact-left">
+            <div class="city">Hồ Chí Minh</div>
+            <div class="address">164 Lê Thánh Tôn, Bến Thành, Quận 1</div>
+            <div class="address">54 Phạm Hồng Thái, Bến Thành, Quận 1</div>
+            <div class="address">190-192 Trần Quý, Phường 6, Quận 11</div>
+        </div>
+    </div>
+    <div class="contact-info">
+        <div class="contact-left">
+            <div class="city">Hà Nội</div>
+            <div class="address">30 Phan Chu Trinh, Q.Hoàn Kiếm</div>
+        </div>
+    </div>
+    <div class="contact-info">
+        <div class="contact-left">
+            <div class="city">Đà Nẵng</div>
+            <div class="address">174 Nguyễn Văn Linh, Thanh Khê</div>
+        </div>
+    </div>
+    <div class="contact-info">
+        
+        <div class="contact-item"> Đặt vé máy bay: <span> <strong> <u> 1900 4798 </u> </strong> </span></div>
+        <div class="contact-item"> Đặt Tour du lịch: <span> <strong> <u> 1900 3398 </u> </strong> </span></div>
+        <div class="contact-item"> Đặt phòng khách sạn: <span> <strong> <u> 1900 4698 </u> </strong> </span></div>
+        <div class="contact-item"> Tư vấn xin Visa: <span> <strong> <u> 1900 3498 </u> </strong> </span></div>
+        <div class="contact-item"> Tổng đài hỗ trợ gọi từ nước ngoài về Việt Nam: <span> <strong> <u> +8428 7303 6167 </u> </strong> </span></div>
+    </div>
+</body>
+</html>
