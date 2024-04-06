@@ -1,4 +1,31 @@
 * {
+    header {
+    background-color: #0088CC;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start; 
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-right: 5px; 
+
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFC400;
+}
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -66,33 +93,6 @@ input[type="text"], input[type="date"], input[type="number"]{
 }
 
 body {
-    header {
-    background-color: #0088CC;
-    color: #ffffff;
-    padding: 20px 0;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-start; 
-}
-
-nav ul li {
-    margin-left: 20px;
-    margin-right: 5px; 
-
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #FFC400;
-}
     font-family: Verdana,sans-serif;
 }
 
