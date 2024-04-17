@@ -28,7 +28,7 @@ nav {
 
 .logo {
     max-width: 130px;
-    margin-right: 300px; /* Khoảng cách giữa logo và menu */
+    margin-right: 15px;
 }
 
 nav ul {
@@ -54,6 +54,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFC400;
 }
+
 /* Hero Section */
 .hero {
     background-image: url('hero-bg.jpg');
@@ -204,4 +205,3 @@ nav ul li a:hover {
 .consultation-form button:hover {
     background-color: #005580;
 }
-
