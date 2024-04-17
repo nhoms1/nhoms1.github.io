@@ -28,7 +28,7 @@ nav {
 
 .logo {
     max-width: 130px;
-    margin-right: 300px; /* Khoảng cách giữa logo và menu */
+    margin-right: 15px;
 }
 
 nav ul {
@@ -54,7 +54,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFC400;
 }
-
 .nice-place {
     padding: 100px 0;
 }
