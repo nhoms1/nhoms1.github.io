@@ -1,22 +1,35 @@
-* {
-    header {
+/* Header */
+header {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 20px;
     background-color: #0088CC;
-    color: #ffffff;
-    padding: 20px 0;
+}
+
+nav {
+    display: flex; /* Sử dụng flexbox cho menu và logo */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.logo {
+    max-width: 130px;
+    margin-right: 15px;
 }
 
 nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    list-style: none;
-    justify-content: flex-start; 
 }
 
 nav ul li {
-    margin-left: 20px;
-    margin-right: 5px; 
-
+    margin-right: 20px;
 }
 
+nav ul li:last-child {
+    margin-right: 0;
+}
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
