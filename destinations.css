@@ -4,17 +4,16 @@ body {
     padding: 0;
 }
 
-/* Header */
 header {
     display: flex;
-    align-items: center; /* Căn giữa theo chiều dọc */
+    align-items: center; 
     padding: 20px;
     background-color: #0088CC;
 }
 
 nav {
-    display: flex; /* Sử dụng flexbox cho menu và logo */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    display: flex; 
+    align-items: center; 
 }
 
 .logo {
