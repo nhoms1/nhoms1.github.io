@@ -12,8 +12,8 @@ nav {
 }
 
 .logo {
-    max-width: 130px;
-    margin-right: 15px;
+    max-width: 100px;
+    margin-right: 10px;
 }
 
 nav ul {
