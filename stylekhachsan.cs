@@ -13,7 +13,7 @@ nav {
 
 .logo {
     max-width: 100px;
-    margin-right: 10px;
+    left: 15px;
 }
 
 nav ul {
@@ -24,7 +24,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    left: 20px;
 }
 
 nav ul li:last-child {
