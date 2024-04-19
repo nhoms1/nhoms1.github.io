@@ -50,44 +50,11 @@ nav ul li a:hover {
 }
 
 header h1 {
-    margin: 0;
+    color: aliceblue;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#banner {
-    background-image: url('banner.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-#destination {
-    padding: 20px;
-}
-
-.destination-item {
-    margin-bottom: 20px;
-}
-
-.destination-item img {
-    width: 100%;
-    height: auto;
+p{
+    font-family: sans-serif
 }
 
 footer {
