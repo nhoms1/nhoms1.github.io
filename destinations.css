@@ -60,12 +60,6 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        padding: 0 20px;
-    }
-}
-
 .destinations-content-item {
     display: flex;
     margin-bottom: 30px;
@@ -78,18 +72,6 @@ nav ul li a:hover {
 .destinations-content-item-text {
     width: 50%;
     margin-left: 20px; 
-}
-
-@media only screen and (max-width: 768px) {
-    .destinations-content-item {
-        flex-direction: column;
-    }
-
-    .destinations-content-item-text {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
 }
 
 button {
