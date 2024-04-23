@@ -7,28 +7,29 @@ header {
 }
 
 nav { 
-    display: flex;
-    align-items: center; 
+    display: flex; 
+    align-items: center;
 }
    
-.logo {
-   max-width: 100px;
+.logo { 
+   max-width: 100px; 
    margin-right: 15px; 
 }
 
 nav ul { 
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
     display: flex; 
 }
 
 nav ul li { 
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
-nav ul li:last-child {
-    margin-right: 0;
+nav ul li:last-child { 
+    margin-right: 0; 
+} 
 
 nav ul li a {
     color: #ffffff; 
@@ -49,7 +50,7 @@ nav ul li a:hover {
     height: 300px; 
 }
 
-.destinations-content-item-img img{ 
+.destinations-content-item-img img{
     width: 100%; 
     height: 100%;
     object-fit: cover;
@@ -57,12 +58,10 @@ nav ul li a:hover {
 
 .container { 
     max-width: 1200px; 
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
-
-.destinations-content-item { 
-    display: flex;
+.destinations-content-item {
     margin-bottom: 30px;
 }
 
@@ -73,15 +72,15 @@ nav ul li a:hover {
 
 .destinations-content-item-text {
     width: 50%;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
-* { 
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
 }  
- 
+   
 button {
     background-color: #0088CC;
     color: #fff;
@@ -89,7 +88,7 @@ button {
     padding: 10px 20px; 
     border-radius: 5px; 
     cursor: pointer; 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; 
 }
 
 button:hover {
