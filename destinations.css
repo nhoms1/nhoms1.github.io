@@ -1,42 +1,42 @@
 header {
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 20px;
     background-color: #0088CC;
     margin: 0px;
 }
 
-nav {
-    display: flex; 
+nav { 
+    display: flex;
     align-items: center; 
 }
-
+   
 .logo {
-    max-width: 130px;
-    margin-right: 15px;
+   max-width: 100px;
+   margin-right: 15px; 
 }
 
-nav ul {
+nav ul { 
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; 
 }
 
-nav ul li {
-    margin-right: 20px;
+nav ul li { 
+    margin-right: 20px; 
 }
 
 nav ul li:last-child {
     margin-right: 0;
-}
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-nav ul li a:hover {
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+} 
+
+nav ul li a:hover { 
     color: #FFC400;
 }
 
@@ -44,29 +44,31 @@ nav ul li a:hover {
     padding: 0px 0; 
 }
 
-.destinations-content-item-img{
+.destinations-content-item-img{ 
     width: 50%;
-    height: 300px;
+    height: 300px; 
 }
 
-.destinations-content-item-img img{
-    width: 100%;
+.destinations-content-item-img img{ 
+    width: 100%; 
     height: 100%;
     object-fit: cover;
 }
 
-.container {
-    max-width: 1200px;
+.container { 
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
-.destinations-content-item {
+
+.destinations-content-item { 
     display: flex;
     margin-bottom: 30px;
 }
 
+
 .destinations-content-item-img {
-    width: 50%;
+    width: 50%; 
 }
 
 .destinations-content-item-text {
@@ -74,23 +76,29 @@ nav ul li a:hover {
     margin-left: 20px; 
 }
 
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}  
+ 
 button {
     background-color: #0088CC;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #005587;
+    background-color: #005587; 
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    text-align: center; 
     padding: 20px;
 }
