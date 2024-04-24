@@ -9,65 +9,59 @@ header {
 
 nav { 
     display: flex; 
-    align-items: center; 
+    align-items: center; /* Căn giữa theo chiều dọc */
 }
    
-.logo { 
-   max-width: 100px; 
-   margin-right: 15px; 
+.logo { /*định dạng logo của trang web*/
+   max-width: 100px; /*chiều rộng tối đa của logo*/
+   margin-right: 15px; /*khoảng cách của logo vs thanh điều hướng bên cạnh*/
 }
 
-nav ul { 
-    list-style-type: none; 
+nav ul { /*định dạng danh sách các mục menu*/
+    list-style-type: none; /*loại bỏ các chấm dầu dòng trong menu*/ 
     margin: 0;
     padding: 0;
-    display: flex; 
+    display: flex; /*sử dụng flexboc để căn chỉnh các mục menu theo hàng ngang*/
 }
 
-nav ul li {
-    margin-right: 20px; 
+nav ul li { /*định dạng mỗi mục menu*/
+    margin-right: 20px; /*khoảng cách giữa mỗi mục menu*/
 }
 
-nav ul li:last-child { 
-    margin-right: 0; 
+nav ul li:last-child { /*định dạng mục menu cuối cùng */
+    margin-right: 0; /*loại bỏ khoảng cách của mục menu bên phải */
 } 
 
 nav ul li a {
-    color: #ffffff; 
-    text-decoration: none;
-    transition: color 0.3s ease; 
+    color: #ffffff; /*màu chữ*/
+    text-decoration: none;/*loại bỏ gạch chân mặc định*/
+    transition: color 0.3s ease; /*đổi màu chữ khi di chuột qua liên kết tạo sự tương tác khi n g dùng ấn vào liên kết */
 } 
 
-nav ul li a:hover { 
+nav ul li a:hover { /*chọn phần tử khi ta di chuột qua*/
     color: #FFC400;
 }
 
-.destinations {
-    padding: 0px 0; 
+.destinations-content-item-img{ /*định dạng hình ảnh trong nd về địa điểm du lịch*/
+    width: 50%; /*chiều rộng của hình ảnh*/
+    height: 300px; /*chiều cao của hình ảnh*/
 }
 
-.destinations-content-item-img{
-    width: 50%; 
-    height: 300px;
+.destinations-content-item-img img{ /*hình ảnh bên trong phần tử*/
+    width: 100%; /*hình ảnh chiếm toàn bộ không gian đc cung cấp*/
+    height: 100%; /*duy trì tỷ lệ khung hình*/
+    object-fit: cover; /*đảm bảo hình ảnh sẽ ko bị biến dạng*/
 }
 
-.destinations-content-item-img img{ 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+.container { /*định dạng phần container chứa nội dung về địa điểm du lịch*/
+    max-width: 1200px; /*chiều rộng tối đa của container*/
+    margin: 0 auto; /*căn giữa bên trong khung trình duyệt*/
 }
 
-.container { 
-    max-width: 1200px;
-    margin: 0 auto; 
+.destinations-content-item { 
+    display: flex; 
+    margin-bottom: 30px; 
 }
-
-
-.destinations-content-item {
-    display: flex;
-    margin-bottom: 30px;
-}
-
 
 .destinations-content-item-img {
     width: 50%; 
@@ -78,18 +72,18 @@ nav ul li a:hover {
     margin-left: 20px; 
 }
 
-*{ 
+* { 
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
-}
-   
+}  
+
 button {
     background-color: #0088CC;
     color: #fff;
     border: none; 
     padding: 10px 20px; 
-    border-radius: 5px;
+    border-radius: 5px; 
     cursor: pointer; 
     transition: background-color 0.3s ease; 
 }
