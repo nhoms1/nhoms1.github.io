@@ -1,0 +1,41 @@
+/* Header */
+header {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 20px;
+    background-color: #0088CC;
+}
+
+nav {
+    display: flex; /* Sử dụng flexbox cho menu và logo */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.logo {
+    max-width: 130px;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFC400;
+}
