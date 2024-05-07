@@ -1,69 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fahkwang", sans-serif;
+}
 /* Header */
 header {
     display: flex;
-    align-items: center; /* Căn giữa theo chiều dọc */
-    padding: 20px;
-    background-color: #0088CC;
-}
-
-nav {
-    display: flex; /* Sử dụng flexbox cho menu và logo */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Padding cho phần header */
+    background-color: #0088CC; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho header */
 }
 
 .logo {
-    max-width: 100px;
-    left: 15px;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    max-width: 130px;
+    margin-right: 15px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    display: flex;
+    margin: 0;
 }
 
 nav ul li {
-    left: 20px;
+    display: inline-block;
+    margin-right: 18px; /* Khoảng cách giữa các mục menu */
 }
 
-nav ul li:last-child {
-    margin-right: 0;
-}
 nav ul li a {
-    color: #ffffff;
     text-decoration: none;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #FFC400;
-}
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-
-nav {
-    flex: 1;
-    text-align: right;
-}
-
-nav ul {
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    color: #FFC400; /* Màu chữ khi hover vào mục menu */
 }
 
 #MenuItems a:hover {
